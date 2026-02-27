@@ -1,3 +1,5 @@
+from random import randint
+
 def player_lose():
     print('\nYOU LOSE')
     exit(0)
@@ -68,7 +70,7 @@ def start_game():
 
                 #Machine
                 comp = 4 - (last % 4)
-                if comp == 4: comp = 3
+                if comp == 4: comp = randint(1, 3)
 
             print("\nCONGRATULATIONS!!!")
             print("YOU WON!")
